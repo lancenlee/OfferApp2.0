@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lsy7"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00ffff"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/clickBtn_quit"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="#c0c0c0"
+            android:text="退出"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/clickTv_user"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/clickBtn_delite"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="#c0c0c0"
+            android:text="删除"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/clickIv_img"
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:visibility="gone" />
+
+    <VideoView
+        android:id="@+id/clickVv_video"
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/clickTv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#000000" />
+
+</LinearLayout>

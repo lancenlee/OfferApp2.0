@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/lsy1"
+    >
+
+    <ImageView
+        android:id="@+id/biji_img"
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:visibility="gone" />
+
+    <VideoView
+        android:id="@+id/biji_video"
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/biji_content_ed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:hint="写点儿什么"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        android:background="@null"/>
+    <!--光标居顶-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFAFA">
+
+        <Button
+            android:id="@+id/biji_quit_Btn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#B0E0E6"
+            android:text="退出"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/biji_et_zonghe_name"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_toRightOf="@id/biji_quit_Btn"
+            android:hint="未命名"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@null"
+            android:maxLines="1"/>
+
+        <Button
+            android:id="@+id/biji_finish_Btn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#B0E0E6"
+            android:text="完成"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</LinearLayout>
